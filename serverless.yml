@@ -1,0 +1,12 @@
+service: OneDirectionFacts # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  handler:
+    handler: handler.handler
+    events:
+      - alexaSkill
+
